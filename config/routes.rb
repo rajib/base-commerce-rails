@@ -4,7 +4,6 @@ BaseCommerceRails::Application.routes.draw do
   end
   root :to => "home#index"
   devise_for :users
-  resources :users
 
    mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
 end
