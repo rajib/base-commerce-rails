@@ -26,3 +26,4 @@ gem "binding_of_caller", ">= 0.7.1", :group => :development, :platforms => [:mri
 gem "libv8", ">= 3.11.8"
 gem "therubyracer", ">= 0.11.3", :group => :assets, :platform => :ruby, :require => "v8"
 gem 'rails_admin'
+gem "paperclip", "~> 3.0"
