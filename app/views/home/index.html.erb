@@ -1,1 +1,265 @@
-<h3>Home</h3>
+<div class="row-fluid">
+  <div class="span12">
+    <div class="slider-wrapper theme-bar">
+      <div class="ribbon"></div>
+      <div id="slider1" class="nivoslider">
+        <a href="#"><img src="assets/header_01.jpg" alt="" title="This is an example of a caption<br>This is the second caption line"></a>
+        <a href="#"><img src="assets/header_02.jpg" alt="" title=""></a>
+        <img src="assets/header_03.jpg" alt="" title="Another caption example">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row-fluid">
+  <div class="span8">
+    <div class="row-fluid">
+      <div class="span9">
+        <h2>Special selection</h2>
+      </div>
+      <div class="span3">
+        <div class="social-icons pull-right">
+          <a href="#"><img src="assets/icon-facebook.png" alt="facebook"></a>
+          <a href="#"><img src="assets/icon-twitter.png" alt="twitter"></a>
+          <a href="#"><img src="assets/icon-linkedin.png" alt="linkedin"></a>
+          <a href="#"><img src="assets/icon-rss.png" alt="rss"></a>
+        </div>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span12">
+        <ul class="thumbnails product-list-inline-small">
+        	<% @new_three_product.each do |ntp| %>
+	          <li class="span4">
+	            <div class="thumbnail">
+	              <a href="detail.html">
+	              	<%= image_tag ntp.product_images.first.image(:medium) %>
+	              </a>
+	              <div class="caption">
+	                <a href="detail.html"><%= ntp.title %></a>
+	                <p><%= ntp.description.truncate(20)  %> <span class="label label-info price pull-right">&#x20B9; <%= ntp.price %></span></p>
+	              </div>
+	            </div>
+	          </li>
+	        <% end %>
+        </ul>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span6">
+        <div class="article">
+          <img src="assets/nominate.png" align="right">
+          <h4>Newly Nominated!</h4>
+          <h5>Vote for us now!</h5>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat. <a href="column3.html">More <i class="icon-chevron-right icon-color"></i></a></p>
+        </div>
+      </div>
+      <div class="span6">
+        <div class="article">
+          <img src="assets/starway.png" align="right">
+          <h4>Use the star way!</h4>
+          <h5>Order now!</h5>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. <a href="column3.html">More <i class="icon-chevron-right icon-color"></i></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="span4">
+    <br>
+    <div class="row-fluid">
+      <div class="span12 well well-small">
+        <ul class="nav nav-list">
+          <li class="nav-header">Top 3 most popular</li>
+          <li><a href="detail.html">Product A</a></li>
+          <li><a href="detail.html">Product B</a></li>
+          <li><a href="detail.html">Product C</a></li>
+          <li class="divider"></li>
+          <li class="nav-header">Top 3 best selling</li>
+          <li><a href="detail.html">Product D</a></li>
+          <li><a href="detail.html">Product E</a></li>
+          <li><a href="detail.html">Product F</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="slider-wrapper theme-light">
+          <div class="ribbon"></div>
+          <div id="slider2" class="nivoslider">
+            <img src="assets/banner_01.jpg" alt="" title="This is an example of an optional long caption text" />
+            <img src="assets/banner_02.jpg" alt="" title="" />
+            <img src="assets/banner_03.jpg" alt="" title="" />
+            <img src="assets/banner_04.jpg" alt="" title="Another caption" />
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<div class="row-fluid">
+  <div class="span12">
+    <ul class="thumbnails product-list-inline-large">
+      <li class="span3">
+        <div class="thumbnail light">
+          <a href="detail.html">
+          <span class="label label-info price">&euro; 2,<sup>99</sup></span>
+          <span class="label label-important price price-over">&euro; 1,<sup>99</sup></span>
+          <img data-hover="assets/product_04b.jpg" src="assets/product_04.jpg" alt="">
+          </a>
+          <div class="caption">
+            <a href="detail.html">Product A</a>
+          </div>
+          <a href="products.html" class="btn btn-block">all products in category</a>
+        </div>
+      </li>
+      <li class="span3">
+        <div class="thumbnail dark">
+          <a href="detail.html">
+            <div class="label label-info price">&euro; 93,<sup>99</sup></div>
+            <img data-hover="assets/product_05b.jpg" src="assets/product_05.jpg" alt="">
+          </a>
+          <div class="caption">
+            <a href="detail.html">Product B</a>
+          </div>
+          <a href="products.html" class="btn btn-block">all products in category</a>
+        </div>
+      </li>
+      <li class="span3">
+        <div class="thumbnail light">
+          <a href="detail.html">
+            <div class="label label-info price">&euro; 1023,<sup>99</sup></div>
+            <img data-hover="assets/product_06b.jpg" src="assets/product_06.jpg" alt="">
+          </a>
+          <div class="caption">
+            <a href="detail.html">Product C</a>
+          </div>
+          <a href="products.html" class="btn btn-block">all products in category</a>
+        </div>
+      </li>
+      <li class="span3">
+        <div class="thumbnail dark">
+          <a href="detail.html">
+            <div class="label label-info price">&euro; 123,<sup>99</sup></div>
+            <span class="label label-important price price-over">&euro; 122,<sup>99</sup></span>
+            <img data-hover="assets/product_07b.jpg" src="assets/product_07.jpg" alt="">
+          </a>
+          <div class="caption">
+            <a href="detail.html">Product D</a>
+          </div>
+          <a href="products.html" class="btn btn-block">all products in category</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="row-fluid">
+  <div class="span12">
+    <ul class="thumbnails product-list-inline-large">
+      <li class="span3">
+        <div class="thumbnail dark">
+          <a href="detail.html">
+          <span class="label label-info price">&euro; 2,<sup>99</sup></span>
+          <img data-hover="assets/product_08b.jpg" src="assets/product_08.jpg" alt="">
+          </a>
+          <div class="caption">
+            <a href="detail.html">Product A</a>
+          </div>
+          <a href="products.html" class="btn btn-block">all products in category</a>
+        </div>
+      </li>
+      <li class="span3">
+        <div class="thumbnail light">
+          <a href="detail.html">
+            <div class="label label-info price">&euro; 93,<sup>99</sup></div>
+            <img data-hover="assets/product_09b.jpg" src="assets/product_09.jpg" alt="">
+          </a>
+          <div class="caption">
+            <a href="detail.html">Product B</a>
+          </div>
+          <a href="products.html" class="btn btn-block">all products in category</a>
+        </div>
+      </li>
+      <li class="span3">
+        <div class="thumbnail dark">
+          <a href="detail.html">
+            <div class="label label-info price">&euro; 1023,<sup>99</sup></div>
+            <span class="label label-important price price-over">&euro; 999,<sup>99</sup></span>
+            <img data-hover="assets/product_10b.jpg" src="assets/product_10.jpg" alt="">
+          </a>
+          <div class="caption">
+            <a href="detail.html">Product C</a>
+          </div>
+          <a href="products.html" class="btn btn-block">all products in category</a>
+        </div>
+      </li>
+      <li class="span3">
+        <div class="thumbnail light">
+          <a href="detail.html">
+            <div class="label label-info price">&euro; 123,<sup>99</sup></div>
+            <img data-hover="assets/product_11b.jpg" src="assets/product_11.jpg" alt="">
+          </a>
+          <div class="caption">
+            <a href="detail.html">Product D</a>
+          </div>
+          <a href="products.html" class="btn btn-block">all products in category</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="row-fluid">
+  <div class="span12">
+    <ul class="thumbnails product-list-inline-large">
+      <li class="span3">
+        <div class="thumbnail light">
+          <a href="detail.html">
+          <span class="label label-info price">&euro; 2,<sup>99</sup></span>
+          <img data-hover="assets/product_12b.jpg" src="assets/product_12.jpg" alt="">
+          </a>
+          <div class="caption">
+            <a href="detail.html">Product A</a>
+          </div>
+          <a href="products.html" class="btn btn-block">all products in category</a>
+        </div>
+      </li>
+      <li class="span3">
+        <div class="thumbnail dark">
+          <a href="detail.html">
+            <div class="label label-info price">&euro; 93,<sup>99</sup></div>
+            <span class="label label-important price price-over">&euro; 89,<sup>99</sup></span>
+            <img data-hover="assets/product_13b.jpg" src="assets/product_13.jpg" alt="">
+          </a>
+          <div class="caption">
+            <a href="detail.html">Product B</a>
+          </div>
+          <a href="products.html" class="btn btn-block">all products in category</a>
+        </div>
+      </li>
+      <li class="span3">
+        <div class="thumbnail light">
+          <a href="detail.html">
+            <div class="label label-info price">&euro; 1023,<sup>99</sup></div>
+            <img data-hover="assets/product_14b.jpg" src="assets/product_14.jpg" alt="">
+          </a>
+          <div class="caption">
+            <a href="detail.html">Product C</a>
+          </div>
+          <a href="products.html" class="btn btn-block">all products in category</a>
+        </div>
+      </li>
+      <li class="span3">
+        <div class="thumbnail dark">
+          <a href="detail.html">
+            <div class="label label-info price">&euro; 123,<sup>99</sup></div>
+            <img data-hover="assets/product_15b.jpg" src="assets/product_15.jpg" alt="">
+          </a>
+          <div class="caption">
+            <a href="detail.html">Product D</a>
+          </div>
+          <a href="products.html" class="btn btn-block">all products in category</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

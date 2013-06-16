@@ -1,5 +1,11 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="nl"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="nl"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="nl"><![endif]-->
+<!--[if IE]><html class="no-js ie" lang="nl"><![endif]-->
+<!--[if !IE]><!-->
+<html class="no-js" lang="nl">
+  <!--<![endif]-->
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= content_for?(:title) ? yield(:title) : "Base Commerce Rails" %></title>
@@ -9,27 +15,122 @@
     <%= csrf_meta_tags %>
     <%= yield(:head) %>
   </head>
-  <body class="<%= controller_name %> <%= action_name %>">
-    <div class="navbar navbar-fixed-top">
-      <nav class="navbar-inner">
-        <div class="container">
-          <%= render 'layouts/navigation' %>
+  <body>
+    <!-- Facebook div for like button -->
+    <div id="fb-root"></div>
+    <!-- Div for shade line -->
+    <div class="header-shadow"></div>
+    <!-- Use class "container-fluid" on the following div for making complete website fluid -->
+    <div class="container">
+      <%= render partial: 'layouts/header' %>
+      <%= yield %>
+      <div class="row-fluid">
+        <div class="span12 well well-small">
+          &copy; <script>document.write(new Date().getFullYear());</script> - All taxes are excluded - shipping costs depends on location - <a href="column3.html">more info <i class="icon-chevron-right"></i></a>
         </div>
-      </nav>
-    </div>
-    <div id="main" role="main">
-      <div class="container">
-        <div class="content">
-           <div class="row">
-            <div class="span12">
-              <%= render 'layouts/messages' %>
-              <%= yield %>
-            </div>
+      </div>
+      <div class="footer">
+        <div class="row-fluid print-hide">
+          <div class="span2">
+            <ul class="unstyled">
+              <li class="footer-title"><a href="category.html">Category 1</a></li>
+              <li><a href="detail.html">Product item A</a></li>
+              <li><a href="detail.html">Product B</a></li>
+              <li><a href="detail.html">Large product C</a></li>
+            </ul>
+            <ul class="unstyled">
+              <li class="footer-title"><a href="category.html">Category 2</a></li>
+              <li><a href="detail.html">Product item A</a></li>
+              <li><a href="detail.html">Product B</a></li>
+              <li><a href="detail.html">Large product C</a></li>
+              <li><a href="detail.html">Product D</a></li>
+              <li><a href="detail.html">Short E</a></li>
+            </ul>
           </div>
-          <footer>
-          </footer>
+          <div class="span2">
+            <ul class="unstyled">
+              <li class="footer-title"><a href="category.html">Category 3</a></li>
+              <li><a href="detail.html">Product item A</a></li>
+              <li><a href="detail.html">Product B</a></li>
+              <li><a href="detail.html">Large product C</a></li>
+              <li><a href="detail.html">Product D</a></li>
+            </ul>
+            <ul class="unstyled">
+              <li class="footer-title"><a href="category.html">Category 4</a></li>
+              <li><a href="detail.html">Product item A</a></li>
+              <li><a href="detail.html">Product B</a></li>
+            </ul>
+          </div>
+          <div class="span2">
+            <ul class="unstyled">
+              <li class="footer-title"><a href="category.html">Category 5</a></li>
+              <li><a href="detail.html">Product item A</a></li>
+              <li><a href="detail.html">Product B</a></li>
+              <li><a href="detail.html">Large product C</a></li>
+            </ul>
+            <ul class="unstyled">
+              <li class="footer-title"><a href="category.html">Category 6</a></li>
+              <li><a href="detail.html">Product item A</a></li>
+              <li><a href="detail.html">Product B</a></li>
+              <li><a href="detail.html">Large product C</a></li>
+              <li><a href="detail.html">Product D</a></li>
+            </ul>
+          </div>
+          <div class="span2">
+            <ul class="unstyled">
+              <li class="footer-title"><a href="category.html">Category 7</a></li>
+              <li><a href="detail.html">Product item A</a></li>
+              <li><a href="detail.html">Product B</a></li>
+              <li><a href="detail.html">Large product C</a></li>
+              <li><a href="detail.html">Product D</a></li>
+              <li><a href="detail.html">Short E</a></li>
+            </ul>
+            <ul class="unstyled">
+              <li class="footer-title"><a href="category.html">Category 8</a></li>
+              <li><a href="detail.html">Product item A</a></li>
+              <li><a href="detail.html">Product B</a></li>
+              <li><a href="detail.html">Large product C</a></li>
+              <li><a href="detail.html">Product D</a></li>
+              <li><a href="detail.html">Short E</a></li>
+            </ul>
+          </div>
+          <div class="span2">
+            <ul class="unstyled">
+              <li class="footer-title"><a href="category.html">Category 9</a></li>
+              <li><a href="detail.html">Product item A</a></li>
+              <li><a href="detail.html">Product B</a></li>
+              <li><a href="detail.html">Large product C</a></li>
+              <li><a href="detail.html">Product D</a></li>
+              <li><a href="detail.html">Short E</a></li>
+            </ul>
+            <ul class="unstyled">
+              <li class="footer-title"><a href="category.html">Category 10</a></li>
+              <li><a href="detail.html">Product item A</a></li>
+              <li><a href="detail.html">Product B</a></li>
+              <li><a href="detail.html">Large product C</a></li>
+              <li><a href="detail.html">Product D</a></li>
+            </ul>
+          </div>
+          <div class="span2">
+            <ul class="unstyled">
+              <li class="footer-title"><a href="category.html">Category 11</a></li>
+              <li><a href="detail.html">Product item A</a></li>
+              <li><a href="detail.html">Product B</a></li>
+            </ul>
+            <ul class="unstyled">
+              <li class="footer-title"><a href="category.html">Category 12</a></li>
+              <li><a href="detail.html">Product item A</a></li>
+              <li><a href="detail.html">Product B</a></li>
+              <li><a href="detail.html">Large product C</a></li>
+            </ul>
+          </div>
         </div>
-      </div> <!--! end of .container -->
-    </div> <!--! end of #main -->
+        <div class="row-fluid print-show">
+          <div class="span12">
+            Alternate footer for print version
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
